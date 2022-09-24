@@ -144,4 +144,30 @@ header .container nav::after{
     header .links .icons span:nth-child(2) { width: 60%; transition: 0.4s; }
     header .links .icons span:last-child { width: 100%; }
 }
+header .panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    padding: 40px;
+    top: 50%;
+    left: 0;
+    z-index: 3;
+    transform: translateY(-50%);
+    background-color: rgb(26, 201, 250 ,0.4);
+}
+header .panel .info {
+    max-width: 500px;
+    color: var(--white);
+}
+header .panel .info h3{
+    font-size: 2rem;
+    line-height: 1.5;
+}
+header .panel .info p {
+    font: 1rem;
+    line-height: 1.5;
+}
+
 /* end header */
