@@ -64,6 +64,7 @@ body {font-family: 'Open Sans', sans-serif;}
 @media (max-width:991px) {.panel {width: 100%;} } 
 
 /* global value */
+/* ------------------------------------------------------------------------------------- */
 /* start header */
 /* the dimensions and the background of the header section */
 header {
@@ -220,6 +221,7 @@ header .icon i{
 }   
 header .icon i:nth-child(2) {right: 0;}
 /* end header */
+/* ------------------------------------------------------------------------------------- */
 /* start services section  */
 .services {
     padding-top: 80px;
@@ -245,11 +247,14 @@ header .icon i:nth-child(2) {right: 0;}
     .services .row .info {
         display: flex; 
         flex-direction: column;
+        width: 80%;
+        margin: auto;
     }
     .services .row .info i {margin: 20px; }
     .services .row .info .text {text-align: center; }
 }
 /* end services section  */
+/* ------------------------------------------------------------------------------------- */
 /* start the design section  */
 .design {
     position: relative;
@@ -305,3 +310,100 @@ header .icon i:nth-child(2) {right: 0;}
     }
 }
 /* end the design section  */
+/* ------------------------------------------------------------------------------------- */
+/* start the portfolio section  */
+.portfolio {padding: 80px 0px;}
+.portfolio .container ul { 
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:50px 0;
+    padding: 0;
+}
+.portfolio .container ul li {
+    margin: 5px 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.portfolio .container ul .active,
+.portfolio .container ul li:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+}
+.portfolio .container-fluid {
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.portfolio .container-fluid .img {
+    width: calc(100% / 4);
+    overflow: hidden;
+    height: fit-content;
+    position: relative;
+}
+.portfolio .container-fluid .img .text {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: var(--white);
+    width: 100%;
+    bottom: -50%;
+}
+.portfolio .container-fluid .img .text h5 {
+    font-size: 18px;
+    margin: 0;
+}
+.portfolio .container-fluid .img .text p {
+    color: var(--blue);
+    margin-bottom: 0;
+}
+.portfolio .container-fluid .img .icon {
+    position: absolute;
+    font-size:42px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50% , -90%);
+    color: var(--white);
+    background-color: var(--blue);
+    width: 80px;
+    height: 80px;
+    padding: 7.5px;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0;
+}
+.portfolio .container-fluid .img:hover img { transform: rotate(10deg) scale(1.4); } 
+.portfolio .container-fluid .img:hover .text {bottom: 0;}
+.portfolio .container-fluid .img:hover .icon {opacity: 0.7;}
+@media (max-width:991px) {
+    .portfolio .container-fluid .img { width: calc(100% / 2); }
+}
+@media (max-width:576px) {
+    .portfolio .container-fluid .img { width: 100% }
+}
+.portfolio .container-fluid .button { margin: 30px auto; }
+.portfolio .container-fluid .button a { 
+    text-decoration: none; 
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 7px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--blue);
+}
+.portfolio .container-fluid .button a:hover {
+    background-color: var(--white);
+    color: var(--blue);
+}
+/* end the portfolio section  */
+/* ------------------------------------------------------------------------------------- */
+/* start the design-2 section  */
+.design-2 {
+    height: 500px;
+    background-clip: url(../img/awesome-video.mp4);
+}
+/* end the design-2 section  */
