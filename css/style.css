@@ -1,9 +1,11 @@
 /* global value */
 :root {
     --blue :#19c8fa;
+    --transparent-blue :#19c9fa8f;
     --dark-blue :#00232c;
     --white :#FFFFFF;
     --dark : #1f2021; 
+    --transparent-color: #00232c7c;
 }
 * { transition: 0.4s; }
 body {font-family: 'Open Sans', sans-serif;}
@@ -312,7 +314,7 @@ header .icon i:nth-child(2) {right: 0;}
 /* end the design section  */
 /* ------------------------------------------------------------------------------------- */
 /* start the portfolio section  */
-.portfolio {padding: 80px 0px;}
+.portfolio {padding: 80px 0px 10px ;}
 .portfolio .container ul { 
     list-style: none;
     text-transform: uppercase;
@@ -385,7 +387,7 @@ header .icon i:nth-child(2) {right: 0;}
 @media (max-width:576px) {
     .portfolio .container-fluid .img { width: 100% }
 }
-.portfolio .container-fluid .button { margin: 30px auto; }
+.portfolio .container-fluid .button { margin: 40px auto; }
 .portfolio .container-fluid .button a { 
     text-decoration: none; 
     color: var(--white);
@@ -402,8 +404,86 @@ header .icon i:nth-child(2) {right: 0;}
 /* end the portfolio section  */
 /* ------------------------------------------------------------------------------------- */
 /* start the design-2 section  */
-.design-2 {
-    height: 500px;
-    background-clip: url(../img/awesome-video.mp4);
+.design-2 { position: relative;}
+.design-2 video { width: 100%; }
+.design-2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    background-color: #00232c;
+    top: 0;
+    right: 0;
+    opacity: 40%;
+}
+.design-2 .panel { width: 100%;}
+.design-2 .panel .info { text-align: center;}
+.design-2 .panel .info button { 
+    border: 3px solid var(--dark);
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 5px 20px;
+    border-radius: 5px;
+    outline: none;
+}
+.design-2 .panel .info button:hover { 
+    background-color: transparent;
+    border-color: var(--white);
 }
 /* end the design-2 section  */
+/* ------------------------------------------------------------------------------------- */
+/* start the about us section  */
+.about { padding: 60px 0px 0px;}
+.about .img {overflow: hidden; margin: 0px auto;}
+.about .img img {width: 80%; transform: translate(10% ,25%);}
+/* end the about us section  */
+/* ------------------------------------------------------------------------------------- */
+/* start the design-3 section  */
+.design-3 {
+    padding: 80px 0px;
+    background-image: url(../img/quote.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: center center;
+    position: relative;
+    z-index: 1;
+}
+.design-3::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: var(--transparent-color);
+}
+.design-3 .row {
+    position: relative;
+    z-index: 3;
+    padding: 20px 0px;
+    background-color: var(--transparent-blue);
+}
+.design-3 .row .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px 10px ;
+    color: var(--white);
+}
+.design-3 .row .info h1 { margin:30px 0px 0px; }
+.design-3 .row .info p { 
+    margin: 10px; 
+    font-size: 12px;
+}
+.design-3 .row .info .shape {
+    width: 50px;
+    height: 50px;
+    background-color: var(--dark);
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* end the design-3 section  */
