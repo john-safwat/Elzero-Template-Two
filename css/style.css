@@ -492,7 +492,7 @@ header .icon i:nth-child(2) {right: 0;}
 /* end the design-3 section  */
 /* -------------------------------------------------------------------------- */
 /* start the data section  */
-.data { padding: 80px 0px; }
+.data { padding: 80px 0px 60px ;}
 .data .head { text-align: center; }
 .data .head p { 
     font-size: 16px;
@@ -575,7 +575,7 @@ header .icon i:nth-child(2) {right: 0;}
 .data .my-progress .graph {
     position: relative;
     width: 100%;
-    height: 20px;
+    height: 15px;
     background-color: gray;
 }
 .data .my-progress .graph .one ,
@@ -590,3 +590,128 @@ header .icon i:nth-child(2) {right: 0;}
 .data .my-progress .graph .three { width: 80%; }
 .data .my-progress .graph .four { width: 87%; }
 /* end the data section  */
+/* -------------------------------------------------------------------------- */
+/* start the design-4 section  */
+.design-4 {
+    padding: 80px 0px;
+    background-image: url(../img/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: center center;
+    position: relative;
+    z-index: 1;
+}
+.design-4::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: var(--transparent-color);
+}
+.design-4 .container {
+    position: relative;
+    text-align: center;
+    color: var(--white);
+    z-index: 7;
+}
+/* end the design-4 section  */
+/* -------------------------------------------------------------------------- */
+/* start the price section  */
+.price { padding: 80px 0; }
+.price .row { margin: 50px 0px 30px;}
+.price .prices {
+    background-color: #fafafa;
+    padding: 30px 0px;
+    margin: 15px 0px;  
+    border-top: 2px solid var(--blue);
+}
+.price .prices p{
+    margin: 0px ;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.price .prices .mony {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--blue);
+    padding-bottom: 20px;
+}
+.price .prices .mony p{
+    position: relative;
+    font-size: 70px;
+    font-weight: 600;
+}
+.price .prices .mony sup {
+    position: absolute;
+    font-size: 20px;
+    top:35px;
+    left: -20px;
+}
+.price .prices .mony sub {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+    bottom: 35px;
+    right: -45px;
+}
+.price .prices ul {
+    list-style: none;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--blue);
+}
+.price .prices ul li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 0px;
+    border-bottom: 2px solid var(--blue);
+}
+.price .prices ul li:last-child{ border: none; }
+.price .prices button {
+    display:flex;
+    background-color: transparent;
+    justify-content: center;
+    outline: none;
+    margin: 20px auto 0px;
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+}
+.price .prices button a {
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: var(--dark);
+}
+.price .prices button:hover { background-color: var(--blue); }
+.price .prices button:hover a{ color: var(--white); }
+.price .dis {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+}
+.price button {
+    display: block;
+    margin: 20px auto;
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 5px;
+}
+.price button a{ 
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--white);
+}
+.price button:hover {background-color: transparent;}
+.price button:hover a{color:var(--dark)}
+
+/* end the price section  */
