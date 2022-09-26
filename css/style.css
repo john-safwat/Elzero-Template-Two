@@ -741,8 +741,13 @@ header .icon i:nth-child(2) {right: 0;}
     position: relative;
     z-index: 7;
 }
+.email .container .text {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 .email .container p {
-    font-size: 20px;
+    margin: 0;
     color: var(--white);
 }
 @media (max-width:991px) {
@@ -751,43 +756,49 @@ header .icon i:nth-child(2) {right: 0;}
         margin: 20px;
     }
 }
-.email .container form{
+.email .container .text form {
     display: flex;
-    justify-content:center;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
-    margin: 30px auto;
     border-radius: 5px ;
-    outline :none;
-    border: 2px solid var(--white)
+    border: 3px solid var(--white);
 }
-.email .container form i {
-    width: 10%;
-    color: var(--white);
+.email .container .text form .input {
+    display: flex;
+    align-items: center; 
+}
+.email .container .text form .input i{
     font-size: 30px;
-    padding: 15px ;
-} 
-.email .container form input::placeholder{color: var(--white);}
-.email .container form input {
-    width: 60%;
+    color: var(--white);
+    padding:10px 20px;
+}
+.email .container .text form .input input {
     background-color: transparent;
-    border:none;
-    padding: 0px 20px;
+    border: none;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 20px;
     color: var(--white);
 }
-.email .container form input:focus{
-    outline :none;
+.email .container .text form .input input::placeholder {color: var(--white);}
+.email .container .text form .input input:focus {
+    outline: none;
     color: var(--white);
 }
-.email .container form button {
-    width: 30%;
+.email .container .text form .button input {
+    height: 100%;
+    word-wrap: break-word;
+    padding: 10px 20px;
     background-color: var(--blue);
     border: none;
-    outline: none;
-}
-.email .container form button input{
-    width: 100%;
     color: var(--white);
+}
+@media (max-width:567px) {
+    .email .container .text form  {justify-content: center;}
+    .email .container .text form .button  {
+        margin: 20px auto;
+    }
 }
 /* end the price section  */
 
