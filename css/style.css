@@ -537,6 +537,10 @@ header .icon i:nth-child(2) {right: 0;}
         align-items: center;
     }
     .data .person p { text-align: center;}
+    .data .person span {
+        right: 50%;
+        transform: translateX(50%);
+    }
 }
 .data .my-progress { margin: 15px 0px; }
 .data .my-progress .title {
@@ -686,7 +690,6 @@ header .icon i:nth-child(2) {right: 0;}
 }
 .price .prices button a {
     text-decoration: none;
-    padding: 5px 10px;
     font-size: 20px;
     color: var(--dark);
 }
@@ -702,7 +705,7 @@ header .icon i:nth-child(2) {right: 0;}
     margin: 20px auto;
     background-color: var(--blue);
     border: 2px solid var(--blue);
-    padding: 10px 20px;
+    padding: 5px 20px;
     outline: none;
     border-radius: 5px;
 }
@@ -715,3 +718,76 @@ header .icon i:nth-child(2) {right: 0;}
 .price button:hover a{color:var(--dark)}
 
 /* end the price section  */
+/* -------------------------------------------------------------------------- */
+/* start the price section  */
+.email {
+    padding : 80px 0px;
+    background-image: url(../img/243.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 3;
+}
+.email::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--transparent-color);
+    top:0;
+}
+.email .container {
+    position: relative;
+    z-index: 7;
+}
+.email .container p {
+    font-size: 20px;
+    color: var(--white);
+}
+@media (max-width:991px) {
+    .email .container p {
+        text-align: center;
+        margin: 20px;
+    }
+}
+.email .container form{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 30px auto;
+    border-radius: 5px ;
+    outline :none;
+    border: 2px solid var(--white)
+}
+.email .container form i {
+    width: 10%;
+    color: var(--white);
+    font-size: 30px;
+    padding: 15px ;
+} 
+.email .container form input::placeholder{color: var(--white);}
+.email .container form input {
+    width: 60%;
+    background-color: transparent;
+    border:none;
+    padding: 0px 20px;
+    color: var(--white);
+}
+.email .container form input:focus{
+    outline :none;
+    color: var(--white);
+}
+.email .container form button {
+    width: 30%;
+    background-color: var(--blue);
+    border: none;
+    outline: none;
+}
+.email .container form button input{
+    width: 100%;
+    color: var(--white);
+}
+/* end the price section  */
+
