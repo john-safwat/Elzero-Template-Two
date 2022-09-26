@@ -538,4 +538,55 @@ header .icon i:nth-child(2) {right: 0;}
     }
     .data .person p { text-align: center;}
 }
+.data .my-progress { margin: 15px 0px; }
+.data .my-progress .title {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+}
+.data .my-progress .title p { padding: 0px 5px; }
+.data .my-progress .title .one ,
+.data .my-progress .title .two ,
+.data .my-progress .title .three ,
+.data .my-progress .title .four {
+    position: absolute;
+    font-size: 12px; 
+    top:0 ;
+    transform: translateX(-50%);
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 7px ;
+    border-radius: 5px;
+}
+.data .my-progress .title .one {left: 95%;}
+.data .my-progress .title .two {left: 93%;}
+.data .my-progress .title .three {left: 80%;}
+.data .my-progress .title .four {left: 87%;}
+.data .my-progress .title span::after {
+    position: absolute;
+    content: "";
+    border-width: 7px;
+    border-style: solid;
+    top: 100%;
+    right: 30%;
+    border-color: var(--dark) transparent transparent transparent;
+}
+.data .my-progress .graph {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: gray;
+}
+.data .my-progress .graph .one ,
+.data .my-progress .graph .two ,
+.data .my-progress .graph .three ,
+.data .my-progress .graph .four {
+    height: 100%;
+    background-color: var(--blue);
+}
+.data .my-progress .graph .one { width: 95%; }
+.data .my-progress .graph .two { width: 93%; }
+.data .my-progress .graph .three { width: 80%; }
+.data .my-progress .graph .four { width: 87%; }
 /* end the data section  */
