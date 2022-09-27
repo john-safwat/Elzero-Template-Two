@@ -169,7 +169,7 @@ header .container nav::after{
     header .container .links:hover ul {
         position: absolute;
         right: 70px;
-        bottom: -240%;
+        bottom: -290%;
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -762,7 +762,7 @@ header .icon i:nth-child(2) {right: 0;}
     justify-content: space-between;
     width: 100%;
     border-radius: 5px ;
-    border: 3px solid var(--white);
+    border: 2px solid var(--white);
 }
 .email .container .text form .input {
     display: flex;
@@ -801,4 +801,77 @@ header .icon i:nth-child(2) {right: 0;}
     }
 }
 /* end the price section  */
-
+/* -------------------------------------------------------------------------- */
+/* start the contact section  */
+.contact { padding: 100px 0px 20px; }
+.contact .row { margin: 50px 0px;}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.contact form textarea ,
+.contact form input {
+    margin: 10px 0px;
+    background-color: transparent;
+    border: 1px solid #DDD;
+    padding: 10px 20px;
+}
+.contact form textarea:focus,
+.contact form input:focus {
+    outline: 5px solid var(--transparent-blue);
+}
+.contact form .button {
+    margin-left:auto ;
+    width: 155px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: 2px solid var(--blue);
+}
+.contact form .button:hover {
+    background-color: transparent;
+    color: var(--blue);
+}
+.contact .text {
+    margin-top: 10px; 
+    margin-bottom: 40px;
+}
+.contact .text .title {font-weight: 500;}
+.contact .text .number {color: gray;}
+@media (max-width:991px) {
+    .contact form .button{ margin: 20px auto; }
+    .contact .text {text-align: center;}
+    .contact .address {
+        margin: 30px 0px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+/* end the contact section  */
+/* ------------------------------------------------------------------------------------- */
+/* start the footer section  */
+footer {
+    background-color: var(--dark);
+    padding: 50px 0px;
+}
+footer .container {
+    display: flex;
+    flex-direction: column;align-items: center;
+    color: var(--white);
+}
+footer .container .img {
+    margin-bottom: 40px;
+}
+footer .container .media { margin-bottom: 40px;}
+footer .container .media p {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-bottom: 2px solid var(--white);
+}
+footer .container .icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .container span {color: var(--blue);}
+/* end the footer section  */
